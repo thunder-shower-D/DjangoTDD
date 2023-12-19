@@ -19,6 +19,8 @@ import unittest
 
 MAX_WAIT =10
 
+
+#继承该类可自动清理测试数据
 class NewVisitorTest(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Chrome()
